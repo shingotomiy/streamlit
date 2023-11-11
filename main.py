@@ -1,10 +1,11 @@
-st.title("Data Exploration App")
-  
-# Data loading and display
-df = load_data("https://ai-jobs.net/salaries/download/salaries.csv")
-st.write("Data Overview:", df)
-  
+import streamlit as st
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+df = pd.read_csv("https://ai-jobs.net/salaries/download/salaries.csv")
+ 
 st.write(df.describe())
+
 
   # Linear Regression
 x_col, y_col = st.selectbox('Select X Column', df.columns), st.selectbox('Select Y Column', df.columns)
@@ -14,3 +15,4 @@ model = LinearRegression()
 model.fit(X, Y)
 st.write(f"Coefficient: {model.coef_[0]}, Intercept: {model.intercept_}")
 
+st.dataframe(df)
