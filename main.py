@@ -3,7 +3,9 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 df = pd.read_csv("https://ai-jobs.net/salaries/download/salaries.csv")
- 
+
+st.header('Statistics for Data Science - Group 11')
+st.write('https://ai-jobs.net/salaries/download/salaries.csv')
 st.write(df.describe())
 
 
