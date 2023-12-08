@@ -4,9 +4,8 @@ from sklearn.linear_model import LinearRegression
 
 df = pd.read_csv("https://ai-jobs.net/salaries/download/salaries.csv")
 
-st.header('Statistics for Data Science - Group 11')
-st.write('https://ai-jobs.net/salaries/download/salaries.csv')
-st.write(df.describe())
+st.header('Salary Prediction For Data Positions: Model Building and Analysis Approach')
+st.write('In the rapidly evolving field of data science, understanding salary trends and determinants is crucial for both employers and job seekers. Our goal in this project is to develop a model capable of forecasting salaries of Data Science and engineering professions based on various factors. The project will encompass a rigorous process of data cleansing, including addressing missing values and evaluating categorical variables, followed by an exploration of data through descriptive statistics and visualizations to identify key correlations. We aim to build and test a series of linear regression models, ensuring adherence to all necessary statistical assumptions. This project holds the potential for a practical application: a salary calculator tool, which could be a valuable asset for both ourselves and the wider job-seeking community.')
 
 
   # Linear Regression
